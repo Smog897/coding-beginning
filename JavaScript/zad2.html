@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        Podaj: <br>
+        marka samochodu:    <input type="text" id="marka"><br>
+
+        typ samochodu:    <input type="text" id="typ"><br>
+
+        rok produkcji samochodu:    <input type="text" id="rok"><br>
+
+        <input type="button" value="podane" onclick="tak()">
+    
+    </form>
+
+    <div id="auto">
+
+        tutaj będą dane twojego samochodu
+
+    </div>
+    
+    <script>
+        function tak(){
+
+        var marka = document.getElementById("marka").value;
+
+        var typ = document.getElementById("typ").value;
+
+        var rok = document.getElementById("rok").value;
+
+
+        document.getElementById("auto").innerHTML = "marka twojego samochodu to " + marka + " typu " + typ + " z roku " + rok;
+
+    }
+
+    </script>
+
+
+
+</body>
+</html>

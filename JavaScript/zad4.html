@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+#a{
+
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 5em;
+    height: 5em;
+    
+}
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="a" onmouseover="a()" onmouseout="b()">
+
+    </div>
+
+    <script>
+        function a(){
+            
+            document.getElementById("a").style.border = "10px solid grey";
+
+        }
+
+        function b(){
+            
+            document.getElementById("a").style.border = "1px solid black";
+            
+        }
+
+    </script>
+
+</body>
+</html>

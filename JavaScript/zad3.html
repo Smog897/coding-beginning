@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <form>
+            podaj długość boku: <input type="number" id="bok"><br>
+
+            <input type="button" value="oblicz" onclick="tak()">
+        </form>
+    </fieldset>
+        
+    <div id="tekst">
+        tutaj bedzie wyswietlony pole i obwód kwadratu
+
+    </div>
+
+
+    <script>
+
+        function tak(){
+            
+            var bok = document.getElementById("bok").value;
+            
+            if(bok>=0){
+
+                var pole = bok*bok;
+
+                var obw = bok*4;
+
+                  document.getElementById("tekst").innerHTML = "pole kwadratu to: " + pole + " a obwód to " + obw;
+
+            }else{
+            
+                document.getElementById("tekst").innerHTML = "podałeś liczbe ujemna"
+
+            }
+
+           
+        }
+
+    </script>
+
+</body>
+</html>

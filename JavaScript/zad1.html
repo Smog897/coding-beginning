@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <fieldset>
+        
+    <form>
+
+        Podaj ilosc kilometrów:
+
+        <input id="km" type="text"><br>
+
+        <input type="button" onclick="przelicz()" value="oblicz">
+
+    </form>
+
+    <div id="w">Tutaj bedzie wynik skryptu</div>
+
+    <script>
+
+    function przelicz()
+    {
+        var km=document.getElementById("km").value;
+
+        var mile=km*1.6;
+
+        document.getElementById("w").innerHTML="W milach to "+mile;
+
+    }
+
+    </script>
+    </fieldset>
+</body>
+</html>
